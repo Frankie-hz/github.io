@@ -1,0 +1,8 @@
+title: Frankie-hz Guides
+description: Testing and GM command guides.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
