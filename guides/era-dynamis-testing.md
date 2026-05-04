@@ -70,7 +70,7 @@ Useful optional coverage:
 | [`!dynaplayer <player> <zone>`](gm-commands/dynaplayer.html) | Clears one player's Dynamis player variables without zone cleanup. | Use when retesting one character's lockout or participant state. |
 | [`!dynareset <zone>`](gm-commands/dynareset.html) | Fully cleans up a Dynamis zone. | Use between full test runs when stale zone state would affect the next run. |
 | [`!dynaspawn <zone> <enedin id>`](gm-commands/dynaspawn.html) | Spawns a mob/statue from the zone's Enedin ID mapping. | Use to isolate statue, wave, time-extension, or special mob behavior. |
-| [`!dynastart <mode>`](gm-commands/dynastart.html) | Starts Dynamis for the targeted player in normal or debug mode. | Use for isolated Dynamis-system tests, not as proof that normal entry works. |
+| [`!dynastart [zone] <mode>`](gm-commands/dynastart.html) | Starts Dynamis for the targeted player in normal or debug mode. | Use for isolated Dynamis-system tests, not as proof that normal entry works. |
 | [`!dynavars <zone>`](gm-commands/dynavars.html) | Prints local Dynamis zone variables and remaining time when set. | Use to verify timer, cleanup, debug mode, and local zone state. |
 
 All six commands currently require GM permission level `3`.
@@ -287,8 +287,8 @@ Manual cleanup note: if the zone state is stuck, use [`!dynareset <zone>`](gm-co
 All mob positions and spawns are based off of this: https://enedin.be/dyna/html/zones.htm
 
 GM Testing:
-1. !zone [zonename]
-2. [`!dynastart <mode>`](gm-commands/dynastart.html) to start the dynamis run in debug mode
+1. Put the targeted test player in the Dynamis zone or its attached entry zone.
+2. [`!dynastart <zone> 1`](gm-commands/dynastart.html) to start the Dynamis run in debug mode from anywhere.
 3. Follow steps below starting from 2.
 
 Normal Testing:
