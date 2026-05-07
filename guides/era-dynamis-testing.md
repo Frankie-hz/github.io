@@ -3,9 +3,6 @@ title: Era Dynamis Testing Guide
 ---
 
 # Era Dynamis Testing Guide
-
-Pull request: [phoenixffxi/Phoenix#31](https://github.com/phoenixffxi/Phoenix/pull/31)
-
 This is a gameplay and behavior testing guide only.
 
 ## What This Tests
